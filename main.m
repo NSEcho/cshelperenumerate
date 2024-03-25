@@ -10,7 +10,7 @@ int main(int argc, const char **argv) {
 
 
     int i;
-    for (i = 0; i < 65536; i++) {
+    for (i = 0; i < 99999; i++) {
         xpc_object_t message = xpc_dictionary_create(NULL, NULL, 0);
         xpc_dictionary_set_string(message, "command", "fetchData");
         xpc_dictionary_set_int64(message, "pid", i);
